@@ -90,22 +90,47 @@ Everything profiled for AgentPay Labs is published on APIs.io rather than in thi
 
 Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [agentpay-so-mcp.yml](https://apis.io/servers/agentpay-so/agentpay-so-mcp-yml/)
+
 #### Agentic access (1)
 
 Which operations an agent can call, which act, and which need a human in the loop.
 
-- [Agentpay So Agentic Access](https://apis.io/agentic-access/agentpay-so/agentpay-so-agentic-access/)
+- [AgentPay Labs Agentic Access](https://apis.io/agentic-access/agentpay-so/agentpay-so-agentic-access/)
 
-#### JSON Schema (6)
+#### JSON Schema (25)
 
 The data models the API reads and writes.
 
+- [AcpPayRequest](https://apis.io/schemas/agentpay-so/agentpay-so-acp-pay-request/)
+- [AcpPayResponse](https://apis.io/schemas/agentpay-so/agentpay-so-acp-pay-response/)
+- [AcpVerifyRequest](https://apis.io/schemas/agentpay-so/agentpay-so-acp-verify-request/)
+- [AcpVerifyResponse](https://apis.io/schemas/agentpay-so/agentpay-so-acp-verify-response/)
 - [AgentPaymentIntentRequest](https://apis.io/schemas/agentpay-so/agentpay-so-agent-payment-intent-request/)
+- [AgentRankResponse](https://apis.io/schemas/agentpay-so/agentpay-so-agent-rank-response/)
+- [AgentRegisterRequest](https://apis.io/schemas/agentpay-so/agentpay-so-agent-register-request/)
+- [AgentRegisterResponse](https://apis.io/schemas/agentpay-so/agentpay-so-agent-register-response/)
+- [Ap2ConfirmBody](https://apis.io/schemas/agentpay-so/agentpay-so-ap2-confirm-body/)
+- [Ap2ReceiptBody](https://apis.io/schemas/agentpay-so/agentpay-so-ap2-receipt-body/)
+- [Ap2RequestBody](https://apis.io/schemas/agentpay-so/agentpay-so-ap2-request-body/)
+- [Ap2RequestResponse](https://apis.io/schemas/agentpay-so/agentpay-so-ap2-request-response/)
 - [CommerceCompileRequest](https://apis.io/schemas/agentpay-so/agentpay-so-commerce-compile-request/)
 - [CommerceCompileResponse](https://apis.io/schemas/agentpay-so/agentpay-so-commerce-compile-response/)
+- [EscrowCreateRequest](https://apis.io/schemas/agentpay-so/agentpay-so-escrow-create-request/)
+- [EscrowResponse](https://apis.io/schemas/agentpay-so/agentpay-so-escrow-response/)
+- [HealthResponse](https://apis.io/schemas/agentpay-so/agentpay-so-health-response/)
+- [LeaderboardResponse](https://apis.io/schemas/agentpay-so/agentpay-so-leaderboard-response/)
 - [MarketplaceDiscoverResponse](https://apis.io/schemas/agentpay-so/agentpay-so-marketplace-discover-response/)
+- [MerchantRegisterRequest](https://apis.io/schemas/agentpay-so/agentpay-so-merchant-register-request/)
+- [MerchantRegisterResponse](https://apis.io/schemas/agentpay-so/agentpay-so-merchant-register-response/)
 - [PaymentIntentResponse](https://apis.io/schemas/agentpay-so/agentpay-so-payment-intent-response/)
 - [PaymentVerifyResponse](https://apis.io/schemas/agentpay-so/agentpay-so-payment-verify-response/)
+- [WebhookSubscribeRequest](https://apis.io/schemas/agentpay-so/agentpay-so-webhook-subscribe-request/)
+- [WebhookSubscribeResponse](https://apis.io/schemas/agentpay-so/agentpay-so-webhook-subscribe-response/)
 
 #### JSON-LD (1)
 
@@ -123,14 +148,14 @@ Spectral rulesets for the provider's contracts.
 
 Authentication, trust centre, and vulnerability disclosure.
 
-- [Agentpay So Authentication](https://apis.io/security/agentpay-so/agentpay-so-authentication/)
-- [Agentpay So Domain Security](https://apis.io/security/agentpay-so/agentpay-so-domain-security/)
+- [AgentPay Labs Authentication](https://apis.io/security/agentpay-so/agentpay-so-authentication/)
+- [AgentPay Labs Domain Security](https://apis.io/security/agentpay-so/agentpay-so-domain-security/)
 
 #### Plans and pricing (1)
 
 Published plans, tiers and prices.
 
-- [Agentpay So Plans Pricing](https://apis.io/plans/agentpay-so/agentpay-so-plans-pricing/)
+- [AgentPay Labs Plans Pricing](https://apis.io/plans/agentpay-so/agentpay-so-plans-pricing/)
 
 ## Where to find this API
 
@@ -147,33 +172,33 @@ Links to the company's own pages. This repository publishes no copy of their spe
 
 ## API Evangelist rating
 
-**Kin Score 56.9** — strong · rubric 0.25.0 · scored 2026-11-01
+**Kin Score 48.6** — developing · rubric 0.28.1 · scored 2026-11-21
 
 | Facet | Score |
 |---|---|
 | Discoverability | 61.7 |
-| Contract quality | 57.7 |
-| Contract governance | 79.1 |
+| Contract quality | 60.8 |
+| Contract governance | 22.0 |
 | Operational transparency | 0.0 |
-| Developer ergonomics | 54.0 |
-| Access clarity | 73.2 |
+| Developer ergonomics | 49.4 |
+| Access clarity | 74.5 |
 
-**Agent readiness 56.6** — agent-ready (gated down from agent-native)
+**Agent readiness 51.1** — agent-ready (gated down from agent-native)
 
 | Agent-readiness dimension | Result |
 |---|---|
 | Spec Presence | yes |
-| Agentic Access | unknown |
+| Agentic Access | derived (partial credit) |
 | Reversibility Documented | — |
 | MCP Server | documented (partial credit) |
 | Auth Clarity | served (partial credit) |
 | Idempotency | — |
-| Error Semantics | derived (partial credit) |
+| Error Semantics | verified |
 | OpenAPI Examples | partial |
 | Rate Limit Signal | verified |
 | Event Surface Described | — |
-| Agent Skills | unknown |
-| Well Known Catalog | yes |
+| Agent Skills | derived (partial credit) |
+| Well Known Catalog | — |
 | Consent Identity | — |
 | Agent Card | — |
 | Dry Run Mode | — |
@@ -183,8 +208,12 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Agentic Commerce | — |
 | Pagination Ratio | na |
 | Operation Distinctiveness | distinct |
+| MCP Tool Quality | na |
+| Onboarding Descriptor | — |
+| Dns Aid Index | na |
+| Markdown Negotiation | na |
 
-**Regulatory alignment 24.5** — Horizontal (data, software, accessibility, platform)
+**Regulatory alignment 18.6** — Horizontal (data, software, accessibility, platform)
 
 The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/agentpay-so/](https://apis.io/providers/agentpay-so/).
 
